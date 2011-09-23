@@ -10,19 +10,34 @@
    {
     
     var form_field2=Number(myForm.box2.value * 1.005);
+    var select = document.getElementById("dropdown");
 
     // Nu kommer post-numre priserne ind i systemet.
 
-    if (form_field1 == "7800")
+    if (select.value === "dd7800") 
     {
-        var form_field1=200
+    var dropdown=200
     }
 
-    if (form_field1 == "7100") 
+    if (select.value === "dd7700") 
     {
-        var form_field1=300
+    var dropdown=100
     }
 
+    if (select.value === "dd7600") 
+    {
+    var dropdown=300
+    }
+
+    if (select.value === "dd7500") 
+    {
+    var dropdown=400
+    }
+
+    if (select.value === "dd7400") 
+    {
+    var dropdown=400
+    }
     if (myForm.box3.checked)
     {
     var p1=560
@@ -68,14 +83,8 @@
     var r3=0
     }
 
-    if (dropdown.dd7800.selected)
-    {
-      var dropdown=320
-    }
-
-
-    myForm.total.value = form_field1 + Math. ceil(form_field2) + p1 + p2 + r1 + r2 + r3 + dropdown;
-
+    myForm.total.value = dropdown + Math. ceil(form_field2) + p1 + p2 + r1 + r2 + r3;
+    
    }   
 
 </script>
@@ -86,19 +95,19 @@
 
 <div class="primary">
 <center>
-<h1>miniTIA Alpha 1.2.4 </h1>
+<h1>miniTIA Alpha 1.2.4</h1>
 
 <form id="box">
 
-Postnummer:           <select name="dropdown">
-                      <option name="dd7800" value="dd7800" selected>7800
-                      <option name="dd7700" value="dd7700">7700
-                      <option name="dd7600" value="dd7600">7600
-                      <option name="dd7500" value="dd7500">7500
-                      <option name="dd7400" value="dd7400">7400
-                      <option name="dd7300" value="dd7300">7300
-                      <option name="dd7200" value="dd7200">7200
-                      <option name="dd7100" value="dd7100">7100 
+Postnummer:           <select id="dropdown">
+                      <option  value="dd7800" selected>7800
+                      <option  value="dd7700">7700
+                      <option  value="dd7600">7600
+                      <option  value="dd7500">7500
+                      <option  value="dd7400">7400
+                      <option  value="dd7300">7300
+                      <option  value="dd7200">7200
+                      <option  value="dd7100">7100 
                       </select> <br />
 Sum:                  <input type="text" name="box2" /><br />
 Vandskade forsikring: <input type="checkbox" name="box3" /><br />
