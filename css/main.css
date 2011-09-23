@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+
+/* Reset */
+
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+a, address, code, img, small, strong, dl, dt, dd, ol, ul, li, fieldset, form, label {
+
+	margin: 0;
+
+	padding: 0;
+
+	border: 0;
+
+	outline: 0;
+
+	font-size: 100%;
+
+	vertical-align: baseline;
+
+	background: transparent;
+
+}
+
+body {
+
+	line-height: 1.5;
+
+	font-family: helvetica, arial, sans-serif;
+
+}
+
+ol, ul {
+
+	list-style: none;
+
+	color: #76c0e0;
+
+}
+
+/* End Reset*/
+
+/* Main  */
+
+body {
+	position:center;
+background:-webkit-gradient(linear, 80% 20%, 10% 21%, from(#FFFF93), to(#D5F4A2))
+}
+
+.primary {
+	color: white;
+	font-size: 21;
+	text-shadow: 1px 1px 2px #000000;
+    filter: dropshadow(color=#000000, offx=1, offy=1);
+    
+}
+
+.primary h1 {
+	
+	font-size:30;
+}
+
+.primary #box {
+	width: 300px;
+	height: 240px;
+	border:groove 3px #000000;
+-moz-border-radius: 33px;
+-webkit-border-radius: 33px;
+border-radius: 33px;
+}
